@@ -7,7 +7,10 @@ const AllRoutes = () => {
     <Routes>
       <Route path="/" element={<Navigate to="/repo-explorer" />} />
       <Route path="/repo-explorer" element={<RepoExplorer />} />
-      <Route path="/repository/details/:repoId" element={<RepoDetails />} />
+      <Route
+        path="/repository/details/:repositoryId"
+        element={<RepoDetails />}
+      />
     </Routes>
   );
 };
